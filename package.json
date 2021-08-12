@@ -1,0 +1,31 @@
+{
+  "name": "jornada-cloud-native-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipesdsredes/jornada-cloud-native-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipesdsredes/jornada-cloud-native-backend/issues"
+  },
+  "homepage": "https://github.com/felipesdsredes/jornada-cloud-native-backend#readme",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "mongoose": "^5.13.7",
+    "nodemailer": "^6.6.3"
+  }
+}
