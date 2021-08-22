@@ -1,17 +1,5 @@
-version: '3'
+version: "3"
 services:
-  rabbit:
-    image: "rabbitmq:3-management-alpine"
-    hostname: "rabbit"
-    ports:
-      - "15672:15672"
-      - "5672:5672"
-    container_name: "rabbit"
-    volumes:
-      - "./rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins"
-      - "./rabbitmq:/var/lib/rabbitmq"
-    networks:
-      - rabbitmq_go_net
   mongo:
     image: mongo:latest
     container_name: "mongo"
@@ -30,6 +18,3 @@ services:
     container_name: "mongo-express"
     ports:
       - 8081:8081
-networks:
-  rabbitmq_go_net:
-    driver: bridge
