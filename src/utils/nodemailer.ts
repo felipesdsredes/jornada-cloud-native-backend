@@ -17,8 +17,13 @@ export default class Send {
     console.log(params)
 
     const transporter = await nodemailer.createTransport({
-      service: params.host,
+      host: params.host,
+      secureConnection: false,
+      port: 587,
       auth: { user: params.user, pass: params.pass },
+      tls: {
+        ciphers:'SSLv3'
+      }
     })
 
     return await transporter
