@@ -13,7 +13,7 @@ RUN git clone https://github.com/felipesdsredes/jornada-cloud-native-backend.git
 RUN npm install
 
 # Expor a porta em que a aplicação está executando
-EXPOSE 3000
+EXPOSE 3333
 
 # Comando para iniciar a aplicação
 CMD ["npm", "start"]

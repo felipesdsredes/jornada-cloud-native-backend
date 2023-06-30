@@ -1,11 +1,10 @@
 import { connect, model, Schema } from "mongoose"
 import dotenv from "dotenv"
 dotenv.config()
-// // const uri = 
 
 
 connect(
-  `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster-jornada-colabor.0ij5x9x.mongodb.net/jornada-cloud-native?retryWrites=true&w=majority`,
+  `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_HOST}`,
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,
