@@ -1,13 +1,11 @@
 # Usar a imagem base do Node.js
-FROM node
+FROM node:16
 
 # Diretório de trabalho dentro do contêiner
-WORKDIR /webapp
+WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get install -y git
-
-# Clonar o repositório do GitHub
-RUN git clone https://github.com/felipesdsredes/jornada-cloud-native-backend.git
+# Cópia dos artefatos da aplicação
+COPY . /usr/src/app
 
 # Instalar as dependências
 RUN npm install
