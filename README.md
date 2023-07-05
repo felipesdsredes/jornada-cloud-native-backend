@@ -19,6 +19,12 @@ Além disso, o projeto segue as práticas recomendadas para desenvolvimento clou
       userName: "my name"
     }
 
+## Pré-requisitos para configurar a aplicação localmente
+
+-  **Node v16**
+
+-  **NPM**
+
 ## Configuração do Ambiente
 
 Antes de executar a API, é necessário configurar o ambiente localmente. Siga as etapas abaixo:
